@@ -18,7 +18,7 @@ app({
     search.addWidgets([
       instantsearch.widgets.searchBox({
         container: '#search-input',
-        placeholder: 'Type here to search the documents',
+        placeholder: 'Nhập vào đây để tìm kiếm tài liệu',
       }),
       instantsearch.widgets.hits({
         container: '#hits',
@@ -35,26 +35,7 @@ app({
           });
         },
       }),
-      instantsearch.widgets.stats({
-        container: '#stats',
-      }),
-      instantsearch.widgets.sortBy({
-        container: '#sort-by',
-        items: [
-          {
-            value: opts.indexName,
-            label: 'Most relevant',
-          },
-          {
-            value: `${opts.indexName}_price_asc`,
-            label: 'Lowest price',
-          },
-          {
-            value: `${opts.indexName}_price_desc`,
-            label: 'Highest price',
-          },
-        ],
-      }),
+      
       instantsearch.widgets.pagination({
         container: '#pagination',
         scrollTo: '#search-input',
