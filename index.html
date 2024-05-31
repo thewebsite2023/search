@@ -16,6 +16,7 @@
 
   <!-- INTERFACE -->
   <header>
+    <h1>Chào mừng bạn đến với The Website Document</h1>
     <div id="search-input"></div>
   </header>
 
@@ -38,11 +39,9 @@
         <div id="pagination"></div>
       </div>
   </main>
-
-  <footer>
-    Source Code on <a href="https://github.com/algolia/instant-search-demo">Github</a> -
-    Powered by <a href="https://www.algolia.com">Algolia</a> - Data from <a href="https://developer.bestbuy.com">Best Buy</a>
-  </footer>
+<footer>
+    Data from <a href="https://thewebsite2023.github.io/admin">The Website</a>
+</footer>
   <!-- /INTERFACE -->
 
   <!-- TEMPLATES -->
@@ -52,9 +51,8 @@
         <img src="{{image}}" alt="{{name}}">
       </div>
       <div class="hit-content">
-        <h3 class="hit-price">${{price}}</h3>
-        <h2 class="hit-name">{{{_highlightResult.name.value}}}</h2>
-        <p class="hit-category-breadcrumb">{{{categories}}}</p>
+        <h2 class="hit-name">{{{_highlightResult.firstname.value}}}</h2>
+        <p class="hit-category-breadcrumb">{{{_highlightResult.lastname.value}}}</p>
         <p class="hit-stars">{{{starsLayout}}} ({{popularity}})</p>
         <p class="hit-description">{{{_highlightResult.description.value}}}</p>
       </div>
@@ -618,4 +616,4 @@ footer a:hover {
 }
   </style>
 </body>
-</html
+</html>
