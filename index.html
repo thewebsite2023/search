@@ -16,7 +16,6 @@
 
   <!-- INTERFACE -->
   <header>
-    <a href="."><img src="./assets/img/instant_search_logo@2x.png"/></a>
     <div id="search-input"></div>
   </header>
 
@@ -41,8 +40,7 @@
   </main>
 
   <footer>
-    Source Code on <a href="https://github.com/algolia/instant-search-demo">Github</a> -
-    Powered by <a href="https://www.algolia.com">Algolia</a> - Data from <a href="https://developer.bestbuy.com">Best Buy</a>
+    Powered by <a href="https://www.algolia.com">Algolia</a>
   </footer>
   <!-- /INTERFACE -->
 
@@ -50,7 +48,7 @@
   <script type="text/html" id="hit-template">
     <div class="hit">
       <div class="hit-image">
-        <img src="{{image}}" alt="{{name}}">
+        <!--img src="{{image}}" alt="{{name}}"-->
       </div>
       <div class="hit-content">
         <h2 class="hit-name">{{{_highlightResult.name.value}}}</h2>
@@ -63,7 +61,7 @@
   <script type="text/html" id="no-results-template">
     <div id="no-results-message">
       <p>Chúng tôi không thể tìm thấy kết quả với <em>"{{query}}"</em>.</p>
-      <a href="." class='clear-all'>Clear search</a>
+      <a href="." class='clear-all'>Thử tìm kiếm lại</a>
     </div>
   </script>
   <!-- /TEMPLATES -->
