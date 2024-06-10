@@ -18,7 +18,7 @@ app({
     search.addWidgets([
       instantsearch.widgets.searchBox({
         container: '#search-input',
-        placeholder: 'Type here to search the documents',
+        placeholder: 'Nhấp vào đây để tra cứu',
       }),
       instantsearch.widgets.hits({
         container: '#hits',
